@@ -1,0 +1,58 @@
+.exp {
+  padding-block: clamp(5rem, 12vh, 10rem);
+  background: var(--paper-2);
+}
+
+.head {
+  margin-bottom: clamp(2rem, 5vh, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.title {
+  font-size: var(--step-4);
+}
+
+.list {
+  list-style: none;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 0.4rem 2rem;
+  padding-block: clamp(1.4rem, 3.5vh, 2.4rem);
+  border-top: 2px solid var(--ink);
+}
+
+.period {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--step--1);
+  padding-top: 0.35rem;
+}
+
+.role {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: var(--step-2);
+  line-height: 0.95;
+}
+
+.org {
+  color: var(--red-ink);
+}
+
+.blurb {
+  max-width: 60ch;
+  margin-top: 0.5rem;
+  font-size: var(--step--1);
+}
+
+@media (max-width: 640px) {
+  .item {
+    grid-template-columns: 1fr;
+  }
+}

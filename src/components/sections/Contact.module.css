@@ -1,0 +1,91 @@
+.contact {
+  padding-block: clamp(5rem, 12vh, 10rem);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.contact ::selection {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.kicker {
+  color: var(--paper);
+  opacity: 0.8;
+}
+
+.cta {
+  margin-top: 1rem;
+  font-size: var(--step-5);
+  line-height: 0.82;
+}
+
+.cta em {
+  color: var(--red);
+  font-style: normal;
+}
+
+.row {
+  margin-top: clamp(2rem, 6vh, 4rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emailWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.email {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  border-bottom: 2px solid var(--red);
+}
+
+.copy {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: var(--step--2);
+  letter-spacing: 0.08em;
+  border: 1px solid var(--paper);
+  padding: 0.25rem 0.55rem;
+}
+
+.copy:hover {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--step--1);
+}
+
+.socials a:hover {
+  color: var(--red);
+}
+
+.footer {
+  margin-top: clamp(4rem, 10vh, 7rem);
+  border-top: 2px solid rgba(237, 232, 220, 0.4);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+}

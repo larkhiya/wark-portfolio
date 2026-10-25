@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  height: 520vh;
+}
+
+.hero.reduced {
+  height: auto;
+}
+
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.reduced .stage {
+  position: static;
+}
+
+.canvasWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.title {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: clamp(5rem, 11vh, 8rem) var(--gutter) clamp(2rem, 6vh, 4rem);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.role {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: var(--step-0);
+}
+
+.hint {
+  font-family: var(--font-hand);
+  font-size: var(--step-2);
+  color: var(--red-ink);
+  transform: rotate(-3deg);
+}

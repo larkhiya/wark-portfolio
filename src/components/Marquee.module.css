@@ -1,0 +1,38 @@
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  background: var(--ink);
+  color: var(--paper);
+  border-block: 3px solid var(--ink);
+  will-change: transform;
+}
+
+.red {
+  background: var(--red);
+  color: var(--ink);
+}
+
+.track {
+  display: inline-flex;
+  align-items: center;
+  will-change: transform;
+}
+
+.item {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(1.4rem, 3vw, 2.7rem);
+  line-height: 1;
+  padding-block: 0.4em;
+  letter-spacing: 0.01em;
+}
+
+.sep {
+  padding-inline: 0.55em;
+  color: var(--red);
+}
+
+.red .sep {
+  color: var(--paper);
+}

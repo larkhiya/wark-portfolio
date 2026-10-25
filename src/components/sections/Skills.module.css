@@ -1,0 +1,58 @@
+.skills {
+  padding-block: clamp(5rem, 12vh, 10rem);
+}
+
+.head {
+  margin-bottom: clamp(2rem, 5vh, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.title {
+  font-size: var(--step-4);
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(1.8rem, 4vw, 3rem);
+}
+
+.group h3 {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: var(--step--1);
+  margin-bottom: 1.1rem;
+  color: var(--red-ink);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tag {
+  display: inline-block;
+  border: 2px solid var(--ink);
+  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  font-size: var(--step--1);
+  background: var(--paper);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.tag:nth-child(3n) {
+  transform: rotate(-2deg);
+}
+
+.tag:nth-child(3n + 1) {
+  transform: rotate(1.5deg);
+}
+
+.tag:nth-child(4n) {
+  background: var(--red);
+  color: var(--paper);
+}
